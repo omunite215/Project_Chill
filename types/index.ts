@@ -1,27 +1,28 @@
-export interface WorkCardProps { 
-    image_source: string;
-    title: string;
-    category: string;
+export interface WorkCardDetailProps {
+  image: string;
+  title: string;
+  description: string;
+  color: string;
 }
 
-export interface WorkCardDetailProps{
-    image_source: string;
-    title: string;
-    description: string;
-    technologies: string;
-    link: string;
+export interface HeroProps {
+  title: string;
+  heading: string;
+  image: string;
+  underLine: string;
+  lastWordColor: string;
 }
 
-export interface ClientContent{
-    image_source: string;
-    description: string;
-    name: string;
-    classification: string;
+export interface WorkCardProps {
+  image: string;
+  category: string;
+  title: string;
+  flexDirection: string;
+  paragraph1: string;
+  paragraph2: string;
+  technologies: string;
 }
 
-export interface AddressContent{
-    name: string;
-    address: string;
-    phone: string;
-    link: string;
+export interface formContentTypes {
+  title: string;
 }

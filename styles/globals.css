@@ -2,105 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
 html {
-  --scroll-behavior: smooth!important;
-  scroll-behavior: smooth!important;
-  }
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
 
-  .burger {
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #12BCFF;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-  }
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
 
-  #arrow {
-    width: 150px;
-    margin-right: 110px;
-    height: 3px;
-    background-color: #000;
-    position: absolute;
-    transition: transform 0.5s ease;
-  }
+.burger input {
+  display: none;
+}
 
-  #arrow::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #000;
-    transform: translateY(-50%);
-  }
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #12bcff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.35s ease-in-out;
+}
 
-  #arrow:hover {
-    transform: translateX(20px);
-  }
-  @media only screen and (min-width: 768px){
-    #special-box{
-      background: #FFD035;
-      clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-    }
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
 
+.burger span:nth-of-type(2) {
+  top: 40%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 80%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+#arrow {
+  width: 150px;
+  margin-right: 110px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+#arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
+  transform: translateY(-50%);
+}
+
+#arrow:hover {
+  transform: translateX(20px);
+}
+@media only screen and (min-width: 768px) {
+  #special-box {
+    background: #ffd035;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   }
-  
-  
+}
+input,
+textarea {
+  width: 24rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-bottom: solid 2px #17151d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input,
+textarea:focus {
+  border-bottom: solid 2px #17151d;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 336px;
+}

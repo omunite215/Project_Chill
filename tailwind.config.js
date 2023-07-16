@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{html,js,ts,jsx,tsx}",
-    "./sections/**/*.{html,js,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './Common_Components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class',
   theme: {
@@ -21,6 +20,7 @@ module.exports = {
         Euclid: ["Euclid Circular A", "sans-serif"],
         ObjectSans:["Instrument Sans", "sans-serif"],
         RocGrotesk:[ 'Hanken Grotesk', "sans-serif"],
+        DMMono:['DM Mono', "monospace"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -38,4 +38,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

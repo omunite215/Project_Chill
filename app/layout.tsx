@@ -1,8 +1,8 @@
-import { Footer, Navbar } from "@/components";
+import { Footer, Navbar } from "@/Common_Components";
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "Chill",
+  title: "Chill.",
   description: "Products that Matter",
 };
 
@@ -13,10 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=" bg-BgWhite w-full">
-        <Navbar />
+      <body className="bg-BgWhite w-full overflow-x-hidden">
+        <nav className="sm:px-16 px-6 flex justify-center items-center">
+          <Navbar />
+        </nav>
         {children}
-        <Footer />
+        <footer className="sm:px-16 px-6 flex justify-center items-center">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
