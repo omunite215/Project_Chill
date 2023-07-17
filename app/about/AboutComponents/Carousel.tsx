@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 const Carousel = () => {
   return (
-    <section>
+    <section className=" flex justify-center items-center">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

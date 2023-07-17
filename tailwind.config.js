@@ -14,7 +14,8 @@ module.exports = {
         PrimaryYellow: "#FFD035",
         PrimaryRed: "#EB0028",
         PrimaryBlue: "#12BCFF",
-        BgWhite: "#E5E5E5"
+        PrimaryGreen: "#4DD78A",
+        BgWhite: "#FFF"
       },
       fontFamily: {
         Euclid: ["Euclid Circular A", "sans-serif"],

@@ -14,11 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-BgWhite w-full overflow-x-hidden">
-        <nav className="sm:px-16 px-6 flex justify-center items-center">
+        <nav className="sm:px-20 px-10 flex justify-center items-center">
           <Navbar />
         </nav>
         {children}
-        <footer className="sm:px-16 px-6 flex justify-center items-center">
+        <footer className="sm:px-20 px-10 flex justify-center items-center">
           <Footer />
         </footer>
       </body>

@@ -99,7 +99,7 @@ html {
 @media only screen and (min-width: 768px) {
   #special-box {
     background: #ffd035;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    transform: rotate(-3.3deg);
   }
 }
 input,
@@ -129,4 +129,7 @@ textarea:focus {
   background-size: cover;
   width: 300px;
   height: 336px;
+}
+.swiper Image {
+  width: 100%;
 }

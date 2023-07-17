@@ -3,7 +3,7 @@ import Image from "next/image";
 const Content = () => {
   return (
     <article>
-      <ul className=" flex flex-col gap-10 justify-center items-start max-w-7xl mt-10">
+      <ul className="xl:max-w-[85.375rem] w-full sm:px-16 px-6 flex flex-col gap-10 justify-center items-start mt-10">
         <li className="flex justify-center items-start gap-1">
           <Image src="/Decoration/star.svg" width={20} height={20} alt="star" />
           <p>

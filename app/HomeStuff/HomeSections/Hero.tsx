@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="flex sm:flex-row flex-col justify-between items-start gap-x-4 sm:py-6 py-0">
+    <section className="flex sm:flex-row flex-col justify-between items-start gap-x-4 sm:py-6 py-0 sm:px-0 px-3">
       <Image
         src="/Decoration/PinkEllipse.svg"
         width={80}
@@ -13,7 +13,7 @@ const Hero = () => {
       />
       <section className="flex sm:flex-row flex-col sm:justify-between justify-center items-center">
         <Image src="/Decoration/star.svg" width={24} height={24} alt="star" />
-        <article className="flex flex-col justify-between items-center">
+        <article className="flex flex-col justify-between items-center sm:gap-0 gap-2">
           <h1 className="text-PrimaryBlack font-RocGrotesk font-bold text-[64px] text-center">
             We make products that{" "}
             <span className=" text-PrimaryPink flex flex-col justify-center items-center">
@@ -32,7 +32,7 @@ const Hero = () => {
             width={20}
             height={20}
             alt="FancyArrow"
-            className=" sm:h-fit h-[50%] sm:w-fit w-[50%] object-contain self-end"
+            className=" sm:h-fit h-[25%] sm:w-fit w-[25%] object-contain self-end"
           />
           <p className="font-normal font-ObjectSans text-PrimaryBlack text-[20px] leading-[28px] text-center md:w-[55%] w-full">
             We are more than an agency. We want to be a team within your team,
@@ -53,7 +53,7 @@ const Hero = () => {
               height={24}
               width={24}
               alt=""
-              className="sm:h-fit h-full sm:w-fit w-full object-contain self-end align-baseline"
+              className="sm:h-fit h-[50%] sm:w-fit w-[50%] object-contain self-end align-baseline"
             />
           </Link>
         </section>

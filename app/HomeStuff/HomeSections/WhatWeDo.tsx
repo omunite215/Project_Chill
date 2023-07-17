@@ -4,9 +4,9 @@ import styles from "@/styles";
 
 const WhatWeDo = () => {
   return (
-    <section className="sm:pt-[15.19rem] pt-[10.19rem] xl:max-w-[85.375rem] w-full flex flex-col justify-center items-start sm:px-16 px-6 py-6 gap-y-8">
+    <section className="xl:max-w-[85.375rem] w-full flex flex-col justify-center items-start py-6 gap-y-8 sm:px-0 px-3 ">
       <h1 className={styles.subHeading}>What we do?</h1>
-      <section className="w-full flex lg:flex-row flex-col justify-between sm:items-center items-start gap-8">
+      <section className="w-full flex lg:flex-row flex-col justify-start sm:items-center items-start gap-8">
         <Image
           src="/Images/WhatWeDo.svg"
           height={425}
@@ -20,7 +20,7 @@ const WhatWeDo = () => {
             <li>Web Design</li>
             <li>Development</li>
           </ul>
-          <section className="flex justify-between items-center md:gap-44 gap-16">
+          <section className="flex justify-between items-center md:gap-60 gap-20">
             <p className=" font-Euclid font-medium text-[20px] text-PrimaryBlack w-full">
               See all
             </p>

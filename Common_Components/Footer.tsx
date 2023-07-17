@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="xl:max-w-[85.375rem] w-full flex justify-start items-center py-6 pt-[171px] pb-8 sm:px-16 px-6 ">
+    <footer className="xl:max-w-[85.375rem] w-full flex justify-start items-center py-6 pt-[171px] pb-8">
       <section className=" flex justify-between items-center gap-11 flex-wrap">
         <section className="flex flex-col gap-6 justify-center items-start">
           <h3 className=" text-PrimaryBlack font-ObjectSans text-xl">

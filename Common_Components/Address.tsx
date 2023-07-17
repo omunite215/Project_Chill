@@ -4,7 +4,7 @@ import Image from "next/image";
 const Address = () => {
   return (
     <section className="xl:max-w-[85.375rem] w-full flex justify-start items-center sm:px-16 px-6 ">
-      <section className="flex sm:flex-row flex-col justify-between items-center gap-32">
+      <section className="flex sm:flex-row flex-col justify-between items-center sm:gap-32 gap-16">
         {AddressContent.map((items) => (
           <section className=" text-PrimaryBlack flex flex-col justify-start items-start gap-4">
             <Image src="/location.svg" width={24} height={24} alt="location" />

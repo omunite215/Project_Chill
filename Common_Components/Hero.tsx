@@ -22,7 +22,9 @@ const Hero = ({
         alt="ellipse"
         className=" object-contain self-end"
       />
-      <h3 className={styles.heading1}>{title}</h3>
+      <h3 className="font-ObjectSans text-PrimaryBlack xs:text-[34px] text-[30px] font-bold italic xs:leading-10 leading-8">
+        {title}
+      </h3>
       <section className="flex justify-start xl:items-start items-center">
         <Image
           src="/Decoration/lines.svg"

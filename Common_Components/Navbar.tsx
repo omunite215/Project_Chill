@@ -7,33 +7,33 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <header
-      className={`xl:max-w-[85.375rem] w-full flex justify-center items-center py-6`}
+      className='xl:max-w-[85.375rem] w-full flex justify-center items-center py-6'
     >
-      <nav className={`w-full flex justify-between items-center`}>
+      <nav className='w-full flex justify-between items-center'>
         <Link
           href="/"
-          className={`font-ObjectSans text-PrimaryBlack xs:text-[34px] text-[30px] font-bold italic xs:leading-10 leading-8 hover:text-PrimaryBlue`}
+          className={`font-ObjectSans text-PrimaryBlack text-[2.125rem] font-bold italic xs:leading-10 leading-8 hover:text-PrimaryBlue`}
         >
           chill.
         </Link>
         <ul className="xs:flex hidden items-center list-none justify-between gap-10 font-ObjectSans text-xl font-normal italic">
           <li>
-            <Link href="/works" className=" hover:text-PrimaryBlue">
+            <Link href="/works" className=" hover:text-PrimaryGreen">
               works
             </Link>
           </li>
           <li>
-            <Link href="/about" className=" hover:text-PrimaryBlue">
+            <Link href="/about" className=" hover:text-PrimaryRed">
               about
             </Link>
           </li>
           <li>
-            <Link href="/contact" className=" hover:text-PrimaryBlue">
+            <Link href="/contact" className=" hover:text-PrimaryYellow">
               contact
             </Link>
           </li>
         </ul>
-        <section className={`flex flex-1 items-center justify-end xs:hidden`}>
+        <section className='flex flex-1 items-center justify-end xs:hidden'>
           <label className="burger" htmlFor="burger">
             <input
               type="checkbox"
