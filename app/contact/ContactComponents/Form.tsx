@@ -3,7 +3,7 @@ import SubmitButton from "./SubmitButton";
 const Form = () => {
   return (
     <form className="w-full flex flex-col justify-center items-center sm:px-16 px-6">
-      <section className=" flex flex-col gap-12">
+      <section className=" flex flex-col gap-12 sm:justify-start justify-center sm:items-start items-center">
         <article className="flex flex-col gap-6">
           <label
             htmlFor="Service"

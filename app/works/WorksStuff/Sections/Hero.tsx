@@ -20,17 +20,10 @@ const Hero = ({
         height={144}
         width={141}
         alt="ellipse"
-        className=" object-contain self-end"
+        className=" object-contain self-end transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150"
       />
       <h3 className={styles.heading1}>{title}</h3>
       <section className="flex justify-start xl:items-start items-center">
-        <Image
-          src="/Decoration/lines.svg"
-          width={24}
-          height={24}
-          alt="lines"
-          className=" sm:h-auto h-20 sm:w-auto w-20 object-contain sm:self-start self-end align-top order-last "
-        />
         <section className="flex flex-wrap lg:w-auto md:w-[50%] w-full justify-start items-center font-Euclid text-[84px] sm:gap-3 gap-0">
           {restSentence}
           {` `}
@@ -45,6 +38,13 @@ const Hero = ({
             />
           </section>
         </section>
+        <Image
+          src="/Decoration/lines.svg"
+          width={24}
+          height={24}
+          alt="lines"
+          className="  sm:h-auto ml-6 h-12 sm:w-auto w-20 object-contain sm:static absolute "
+        />
       </section>
     </section>
   );

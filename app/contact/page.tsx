@@ -4,7 +4,7 @@ import { Address, Hero } from "@/Common_Components";
 const page = () => {
   return (
     <main>
-      <section className="sm:px-16 px-6 flex flex-col justify-center items-center gap-10">
+      <section className="sm:px-16 px-6 flex flex-col justify-center items-center sm:gap-10 gap-5">
         <Hero
           title="Contact us"
           heading="Have a project?"
