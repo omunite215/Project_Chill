@@ -9,7 +9,7 @@ This is a Creative agency Website project using Next.Js
 
 A website which made using Next.JS, Splider.JS, TailwindCSS, and TypeScript resulting in a stunning Creative agency website.
 
-This Project is hosted in Netlify : [Techfest](https://techfest-eta.vercel.app/)
+This Project is hosted in Netlify : [Chill](https://chill-ca.netlify.app/)
 
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
